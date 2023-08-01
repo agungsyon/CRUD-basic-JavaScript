@@ -1,8 +1,12 @@
 let data = [
     "Syon",
-    "Syon Panjang"
+    "Syon Panjang",
+    "Syon Panjang Juga",
+    "Syon Panjang Banget"
 ]
 
+
+//function untuk READ
 function tampil() {
     let tabel = document.getElementById('tabel');
     tabel.innerHTML = "<tr><th>No</th><th>Name</th><th>Action</th></tr>";
@@ -14,6 +18,7 @@ function tampil() {
     }
 }
 
+//function untuk CREATE
 function tambah() {
     let input = document.querySelector("input[name=jurusan]");
     data.push(input.value);
@@ -21,12 +26,14 @@ function tambah() {
     input.value = "";
 }
 
+//function untuk Update
 function edit(id) {
     let baru = prompt("Edit", data[id]);
     data[id] = baru;
     tampil();
 }
 
+// Function untuk Delete
 function hapus(id) {
     data.pop(id);
     tampil();
