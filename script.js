@@ -1,6 +1,8 @@
 let data = [
     "Syon",
-    "Syon Panjang"
+    "Syon Panjang",
+    "Syon Panjang Juga",
+    "Syon Panjang Banget"
 ]
 
 
